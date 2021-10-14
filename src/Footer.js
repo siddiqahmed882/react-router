@@ -2,7 +2,7 @@ const Footer = () => {
   const currYear = new Date().getFullYear();
   return (
     <footer className='Footer'>
-      <p>Copyright &copy; ${currYear}</p>
+      <p>Copyright &copy; {currYear}</p>
     </footer>
   );
 };
