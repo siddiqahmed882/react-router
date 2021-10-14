@@ -99,18 +99,11 @@ body {
   align-items: center;
 }
 
-.Nav li {
-  padding: 1rem;
-}
-
-.Nav li:hover,
-.Nav li:focus {
-  padding: 1rem;
-}
-
 .Nav li a {
   color: #fff;
   text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
 }
 
 .Nav li:hover,
@@ -121,7 +114,7 @@ body {
   color: #333;
 }
 
-.Nav li.active {
+.Nav li.active a {
   background-color: #bbb;
 }
 
