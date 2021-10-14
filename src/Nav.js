@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 const Nav = ({ search, setSearch }) => {
+  const path = window.location.pathname;
   return (
     <nav className='Nav'>
       <form className='searchForm' onSubmit={(e) => e.preventDefault()}>
@@ -13,13 +14,13 @@ const Nav = ({ search, setSearch }) => {
         />
       </form>
       <ul>
-        <li>
+        <li className={path === '/' ? 'active' : null}>
           <Link to='/'>Home</Link>
         </li>
-        <li>
+        <li className={path === '/post' ? 'active' : null}>
           <Link to='/post'>Post</Link>
         </li>
-        <li>
+        <li className={path === '/about' ? 'active' : null}>
           <Link to='/about'>About</Link>
         </li>
       </ul>

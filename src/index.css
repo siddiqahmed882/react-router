@@ -121,6 +121,14 @@ body {
   color: #333;
 }
 
+.Nav li.active {
+  background-color: #bbb;
+}
+
+.Nav li.active a {
+  color: #000;
+}
+
 .Nav li:hover a,
 .Nav li:focus a {
   cursor: pointer;
