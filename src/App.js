@@ -40,7 +40,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
-    const datetime = format(new Date(), 'mmmm dd yyyy pp');
+    const datetime = format(new Date(), 'MMMM dd yyyy pp');
     const newPostObj = { id, title: postTitle, datetime, body: postBody };
     const postsList = [...posts, newPostObj];
     setPosts(postsList);
